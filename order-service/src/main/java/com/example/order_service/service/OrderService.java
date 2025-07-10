@@ -16,4 +16,8 @@ public class OrderService {
     public List<ProductDto> getProducts(){
         return client.getProducts();
     }
+
+    public ProductDto getProductById(Long id) {
+        return client.getProduct(id);
+    }
 }

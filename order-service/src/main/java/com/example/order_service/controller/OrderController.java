@@ -17,4 +17,9 @@ public class OrderController {
     public List<ProductDto> getProducts(){
         return orderService.getProducts();
     }
+
+    @GetMapping("/orders/products/{id}")
+    public ProductDto getProductById(Long id) {
+        return orderService.getProductById(id);
+    }
 }

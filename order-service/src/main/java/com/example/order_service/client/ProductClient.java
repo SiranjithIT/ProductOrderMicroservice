@@ -11,4 +11,7 @@ import java.util.List;
 public interface ProductClient {
     @GetMapping("/products")
     public List<ProductDto> getProducts();
+
+    @GetMapping("/products/{id}")
+    public ProductDto getProduct(Long id);
 }
